@@ -7122,6 +7122,7 @@ fieldset:disabled .btn {
   right: 0;
   left: 0;
   z-index: 1030;
+  height: auto !important;
 }
 
 .fixed-bottom {
@@ -11782,7 +11783,7 @@ fieldset:disabled .btn {
 
 /* css style */
 :root {
-  --primary-color: #037ef3;
+  --primary-color: #46b7de;
   --secondary-color: #26D0CE;
   --font-color: #363636;
   --bg-color: #fff;
@@ -19201,7 +19202,7 @@ p.sub-title {
 
 /* banner */
 #demo-1 {
-  background: url(../images/banner1.jpg) no-repeat;
+  background: url(/assets/images/hero-sec.jpg) no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
