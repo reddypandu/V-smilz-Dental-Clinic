@@ -19202,7 +19202,7 @@ p.sub-title {
 
 /* banner */
 #demo-1 {
-  background: url(/assets/images/hero-sec.jpg) no-repeat;
+  background: url(../images/hero-sec.jpg) no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
