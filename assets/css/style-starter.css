@@ -11780,7 +11780,22 @@ fieldset:disabled .btn {
 
 /*# sourceMappingURL=bootstrap.css.map */
 /* //bootstrap */
-
+.whatsapp{
+  position: fixed;
+  bottom: 10px;
+  right: 13px;
+}
+.whatsapp i{
+  font-size: 35px;
+  color: white;
+  background-color: #46b7de;
+  padding: 8px;
+  border-radius: 50%;
+}
+.whatsapp:hover i{
+  color: #46b7de;
+  background-color: white;
+}
 /* css style */
 :root {
   --primary-color: #46b7de;
@@ -20990,7 +21005,8 @@ h4.service-heading {
 }
 
 .form-inner-cont input,
-.form-inner-cont textarea {
+.form-inner-cont textarea,
+.form-inner-cont select {
   outline: none;
   width: 100%;
   font-size: 16px;
