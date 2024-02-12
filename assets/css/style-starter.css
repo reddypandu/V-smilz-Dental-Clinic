@@ -19732,14 +19732,20 @@ h5.text-blog-e {
 .team-block-single {
   box-shadow: var(--box-shadow);
   padding: 10px;
+  height: 500px;
 }
-
+.team-bottom-block{
+  padding: 1rem;
+}
 .w3l-team .team-grids {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  height: 350px;
 }
-
+.w3l-team .team-grids img{
+  height: 100%;
+}
 .w3l-team .social-icons-section a.fac,
 .w3l-team .social-icons-section a.twitter,
 .w3l-team .social-icons-section a.google {
@@ -20303,11 +20309,11 @@ p.copy-footer-29 {
 }
 
 p.copy-footer-29 a {
-  color: var(--primary-color);
+  color: var(--bs-gray-dark);
 }
 
 p.copy-footer-29 a:hover {
-  color: var(--secondary-color);
+  color: var(--bg-color);
 }
 
 @media (max-width: 991px) {
@@ -20316,7 +20322,12 @@ p.copy-footer-29 a:hover {
     font-size: 20px;
   }
 }
+body > footer > div > div > div{
+  border-bottom: 1px solid var(--bs-blue);
+}
+.footer_29 .row{
 
+}
 @media (max-width: 415px) {
 
   .w3l-footer-29-main .footer-list-29 ul li,
