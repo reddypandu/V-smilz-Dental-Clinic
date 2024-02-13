@@ -17,6 +17,12 @@
 </head>
 
 <body>
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+        <img src="./assets/images/logo_icon.png" alt="" style="width:150px;" />
+        <div class="loader"></div>
+    </div>
+    <!--loader-->
     <!-- header -->
     <header id="site-header" class="fixed-top">
         <div class="container">
@@ -38,8 +44,14 @@
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
+                        <li class="nav-item  drop-down">
+                            <a class="nav-link " href="/services.html">Services</a>
+                            <ul class="drop-items">
+                                <li><a href="./services/dentalconsultation.html">Denatl Consultation</a></li>
+                                <li><a href="./services/laser-dentistry.html">Laser Dentistry</a></li>
+
+
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="appointment.html">Book An Appointment</a>
@@ -94,22 +106,27 @@
             <h3 class="title-style text-center mb-5"><span>Book An </span>Appointment</h3>
 
             <div class="form-inner-cont mx-auto" style="max-width:800px">
-                <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+                <form id="bookingForm" method="post" class="signin-form">
                     <div class="row align-form-map">
                         <div class="col-sm-12 form-input">
-                            <input type="text" name="w3lName" id="w3lName" placeholder="Name" />
+                            <input type="text" name="w3lName" id="name" placeholder="Name" />
                         </div>
                         <div class="col-sm-12 form-input">
-                            <input type="email" name="w3lSender" id="w3lSender" placeholder="Email" required="" />
+                            <input type="email" name="w3lSender" id="email" placeholder="Email" required="" />
                         </div>
                         <div class="col-sm-12 form-input">
-                            <input type="date" name="w3lSender" id="w3lSender" placeholder="Date" required="" />
+                            <input type="number" name="number" placeholder="Phone Number" id="number"
+                                class="contact-input">
                         </div>
                         <div class="col-sm-12 form-input">
-                            <input type="time" name="w3lSender" id="w3lSender" placeholder="Time" required="" />
+                            <input type="date" name="w3lSender" id="date" placeholder="Date" required="" />
                         </div>
                         <div class="col-sm-12 form-input">
-                            <select class="select">
+                            <input type="time" name="w3lSender" id="time" placeholder="Time" required="" />
+                        </div>
+
+                        <div class="col-sm-12 form-input">
+                            <select class="select" id="service">
                                 <option value="Dental Implants">Dental Implants</option>
                                 <option value="Prosthesis">Prosthesis</option>
                                 <option value="Dental Braces">Dental Braces</option>
@@ -118,12 +135,10 @@
                             </select>
                         </div>
 
-                        <div class="col-sm-12 form-input">
-                            <input type="number" name="w3lPhone" placeholder="Phone Number" class="contact-input">
-                        </div>
+
                     </div>
                     <div class="form-input">
-                        <textarea placeholder="Message" name="w3lMessage" id="w3lMessage" required=""></textarea>
+                        <textarea placeholder="Message" name="w3lMessage" id="message" required=""></textarea>
                     </div>
                     <div class="submit text-right">
                         <button type="submit" class="btn btn-style">Submit
@@ -164,11 +179,19 @@
                     </div>
                     <div class="col-lg-3 col-md-3 col-4 ps-lg-5 ps-md-4 footer-list-29 mt-md-0 mt-4">
                         <ul>
-                            <h6 class="footer-title-29">Explore</h6>
-                            <li><a href="#blog">Blog Posts</a></li>
-                            <li><a href="#privacy">Privacy policy</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="#license">License & uses</a></li>
+                            <h6 class="footer-title-29">Social Links</h6>
+                            <li><a href="#"><i class="fab fa-instagram" style="columns: white;margin-right: 5px;"></i>
+                                    Instagram</a>
+                            </li>
+                            <li><a href="#"><i class="fab fa-facebook"
+                                        style="columns: white;margin-right: 5px;"></i>Facebook</a>
+                            </li>
+                            <li><a href="#"><i class="fab fa-twitter"
+                                        style="columns: white;margin-right: 5px;"></i>Twitter</a>
+                            </li>
+                            <li><a href="#"><i class="fab fa-linkedin"
+                                        style="columns: white;margin-right: 5px;"></i>Linkedin</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-lg-2 col-md-2 col-4 footer-list-29 mt-md-0 mt-4">
@@ -182,7 +205,7 @@
                     </div>
                 </div>
                 <!-- copyright -->
-                <p class="copy-footer-29 text-center pt-lg-2 mt-2 pb-2">© 2024 V-Smilez Dental. All rights reserved.
+                <p class="copy-footer-29 text-center pt-lg-2 mt-1 pb-2">© 2024 V-Smilez Dental. All rights reserved.
                     Design by
                     <a href="https://www.thepatternscompany.com/" target="_blank">
                         The Patterns Company</a>
@@ -192,6 +215,7 @@
         </div>
     </footer>
     <!-- //footer -->
+
 
     <!-- Js scripts -->
     <!-- move top -->
@@ -271,6 +295,52 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- //bootstrap -->
     <!-- //Js scripts -->
+    <script>
+        //book appointment
+        document.getElementById("bookingForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var fullName = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var date = document.getElementById("date").value;
+            var time = document.getElementById("time").value;
+            var number = document.getElementById("number").value;
+            var message = document.getElementById("message").value;
+            var service = document.getElementById("service").value;
+            var contact = "+918297721721";
+
+            var encodedMessage = encodeURIComponent(
+                "Name: " +
+                fullName +
+                "\n" +
+                "Email: " +
+                email +
+                "\n" +
+                "Number: " +
+                number +
+                "\n" +
+                "Date: " +
+                date +
+                "\n" +
+                "Time: " +
+                time +
+                "\n" +
+                "Service: " +
+                service +
+                "\n" +
+                "Message: " +
+                message
+            );
+
+            // Mobile device, open WhatsApp
+            var whatsappLink = `https://wa.me/${contact}?text=${encodedMessage}`;
+            window.open(whatsappLink, "_blank");
+
+            // Additional: You can reset the form and show a thank you message if needed
+            document.getElementById("thankYouMessage").style.display = "block";
+            document.getElementById("bookingForm").reset();
+        });
+    </script>
 </body>
 
 </html>
