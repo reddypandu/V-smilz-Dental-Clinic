@@ -18916,7 +18916,7 @@ header.nav-fixed {
   background-color: var(--bg-color);
   height: 80px;
   border-bottom: none;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 2px 2px black;
   z-index: 10 !important;
   /* for z-index:10 to display gallery popup */
 }
