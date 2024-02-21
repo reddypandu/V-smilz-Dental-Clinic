@@ -18882,6 +18882,11 @@ div#small-dialog iframe {
   text-transform: uppercase;
 }
 
+.navbar .navbar-brand img {
+  background-color: white;
+  padding: 5px;
+  border-radius: 20px 10px 20px 10px;
+}
 .navbar .navbar-brand i {
   margin-right: 2px;
 }
@@ -18976,13 +18981,13 @@ header {
   position: absolute;
   padding: 0;
   margin-top: 1px;
-  left: 20%;
+  top: 25px;
+  left: -450px;
   background-color: var(--primary-color);
-  display: none;
-  width: 250px;
+  /* display: none; */
+  width: 1000px;
   box-shadow: 1px 1px 2px black;
 }
-
 .nav-item.drop-down .drop-items li {
   padding: 10px 20px;
   border-bottom: 1px solid white;
@@ -18990,8 +18995,8 @@ header {
 
 .nav-item.drop-down .drop-items li a {
   color: white;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .nav-item.drop-down .drop-items li:hover {
@@ -19266,7 +19271,16 @@ h3.title-style {
   line-height: 50px;
   font-weight: 300;
 }
-
+.title-style.list-heading {
+  background-color: #19afdd;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 10px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
 h3.title-style span {
   font-weight: bold;
 }
