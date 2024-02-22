@@ -19010,12 +19010,10 @@ header {
 }
 .heading {
   background-color: #19afdd;
-
 }
 
 .heading h3 {
   padding: 1rem;
-
 }
 
 .treatment-list li {
@@ -19041,12 +19039,11 @@ header {
 }
 
 .treatment-image img {
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .treatment-image:hover img {
   transform: scale(1.1);
-
 }
 
 .treatment-content p {
@@ -19089,10 +19086,7 @@ header {
   }
 
   .nav-item.drop-down .drop-items {
-    position: absolute;
-    padding: 0;
-    top: 40px;
-    left: 0;
+    position: unset;
     width: 100%;
     display: none;
   }
