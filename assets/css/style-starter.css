@@ -19010,10 +19010,12 @@ header {
 }
 .heading {
   background-color: #19afdd;
+
 }
 
 .heading h3 {
   padding: 1rem;
+
 }
 
 .treatment-list li {
@@ -19039,11 +19041,12 @@ header {
 }
 
 .treatment-image img {
-  transition: all 0.3s ease-out;
+  transition: all .3s ease-out;
 }
 
 .treatment-image:hover img {
   transform: scale(1.1);
+
 }
 
 .treatment-content p {
@@ -19089,10 +19092,24 @@ header {
     position: unset;
     width: 100%;
     display: none;
+    
   }
 
   .nav-item.drop-down.active .drop-items {
     display: block;
+    transition: 10s ;
+   animation: open 2s linear 1;
+  }
+  @keyframes open{
+0%{
+  height: 10vh;
+}
+50%{
+  height: 50vh;
+}
+100%{
+  height: 100vh;
+}
   }
 }
 header.nav-fixed {
