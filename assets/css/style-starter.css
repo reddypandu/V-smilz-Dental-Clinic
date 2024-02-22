@@ -18886,6 +18886,12 @@ div#small-dialog iframe {
   background-color: white;
   padding: 5px;
   border-radius: 20px 10px 20px 10px;
+  width: 100px;
+}
+@media (max-width: 992px) {
+  .navbar .navbar-brand img {
+    width: 60px !important;
+  }
 }
 .navbar .navbar-brand i {
   margin-right: 2px;
@@ -18982,9 +18988,9 @@ header {
   padding: 0;
   margin-top: 1px;
   top: 25px;
-  left: -450px;
+  left: -400px;
   background-color: var(--primary-color);
-  /* display: none; */
+  display: none;
   width: 1000px;
   box-shadow: 1px 1px 2px black;
 }
@@ -19002,13 +19008,98 @@ header {
 .nav-item.drop-down .drop-items li:hover {
   background-color: white;
 }
+.heading {
+  background-color: #19afdd;
 
+}
+
+.heading h3 {
+  padding: 1rem;
+
+}
+
+.treatment-list li {
+  padding: 10px 0;
+}
+
+.treatment-list li a {
+  display: table;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.6px;
+  color: #353535;
+}
+
+.treatment-image {
+  margin-bottom: 70px;
+}
+
+.treatment-image {
+  overflow: hidden;
+  position: relative;
+}
+
+.treatment-image img {
+  transition: all .3s ease-out;
+}
+
+.treatment-image:hover img {
+  transform: scale(1.1);
+
+}
+
+.treatment-content p {
+  font-size: 13px;
+  margin-bottom: 30px;
+}
 .nav-item.drop-down .drop-items li:hover a {
   color: var(--drop-color);
 }
 
 .nav-item.drop-down:hover .drop-items {
   display: block;
+}
+.yamm-content {
+  padding: 20px 30px;
+}
+
+.drop p {
+  float: right;
+}
+
+#plus {
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .drop-items .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  #plus {
+    display: block;
+  }
+
+  .nav-item.drop-down:hover .drop-items {
+    display: none;
+  }
+
+  .nav-item.drop-down .drop-items {
+    position: absolute;
+    padding: 0;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+
+  .nav-item.drop-down.active .drop-items {
+    display: block;
+  }
 }
 header.nav-fixed {
   padding: 0;
@@ -19109,7 +19200,7 @@ header.nav-fixed {
 
   .navbar-collapse {
     float: left;
-    text-align: center;
+    /* text-align: center; */
     width: 100%;
     background: var(--bg-color);
     padding: 20px;

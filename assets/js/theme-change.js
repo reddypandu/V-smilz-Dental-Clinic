@@ -39,3 +39,9 @@ var loader = function () {
 };
 
 loader();
+const open = document.querySelector(".nav-item.drop-down");
+const btn = document.getElementById("plus");
+
+btn.addEventListener("click", () => {
+  open.classList.toggle("active");
+});

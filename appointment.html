@@ -27,8 +27,8 @@
     <header id="site-header" class="fixed-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="index.html">
-                    <img src="./assets/images/logo.png" style="width: 100px;" />
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/images/logo.png" />
                 </a>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
@@ -45,19 +45,96 @@
                             <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item  drop-down">
-                            <a class="nav-link " href="/services.html">Services</a>
-                            <ul class="drop-items">
-                                <li><a href="./services/dentalconsultation.html">Denatl Consultation</a></li>
-                                <li><a href="./services/laser-dentistry.html">Laser Dentistry</a></li>
+                            <div class="drop">
+                                <a class="nav-link " href="/services.html">Services</a>
+                                <p class="nav-link" id="plus">+</p>
+                            </div>
 
+                            <!-- <li><a href="./services/dentalconsultation.html">Denatl Consultation</a></li>
+                                <li><a href="./services/laser-dentistry.html">Laser Dentistry</a></li> -->
+                            <ul class="drop-items">
+
+                                <div class="yamm-content">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                            <ul>
+                                                <li><a href="./root-canal-treatment.html"><i
+                                                            class="fa fa-angle-right"></i>Root Canal Treatment</a>
+                                                </li>
+                                                <li><a href="./fixed-teeth-crown-and-bridge.html"><i
+                                                            class="fa fa-angle-right"></i>Fixed Teeth Crown And
+                                                        Bridge</a></li>
+                                                <li><a href="./full-and-partial-Dentures.html"><i
+                                                            class="fa fa-angle-right"></i>Full And Partial
+                                                        Dentures</a></li>
+                                                <li><a href="./dental-implants.html"><i
+                                                            class="fa fa-angle-right"></i>Dental Implants</a></li>
+                                                <li><a href="./teeth-cleaning-scaling-and-polishing.html"><i
+                                                            class="fa fa-angle-right"></i>Teeth Cleaning (Scaling)
+                                                        And Polishing</a></li>
+                                                <li><a href="./teeth-whitening.html"><i
+                                                            class="fa fa-angle-right"></i>Teeth Whitening (
+                                                        Bleaching )</a></li>
+                                                <li><a href="./pediatric-dental-care.html"><i
+                                                            class="fa fa-angle-right"></i>Pediatric Dental Care</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                            <ul>
+                                                <li><a href="./pregnancy-guidance.html"><i
+                                                            class="fa fa-angle-right"></i>Pregnancy guidance</a>
+                                                </li>
+                                                <li><a href="./infant-dental-checkup.html"><i
+                                                            class="fa fa-angle-right"></i>Infant Dental Checkup </a>
+                                                </li>
+                                                <li><a href="./"><i class="fa fa-angle-right"></i>Orthodontics Dental
+                                                        Treatment</a></li>
+                                                <li><a href="./aesthetic-and-cosmetic-dental-treatment.html"><i
+                                                            class="fa fa-angle-right"></i>Aesthetic and Cosmetic
+                                                        Dental Treatment </a></li>
+                                                <li><a href="./tooth-colored-filling.html"><i
+                                                            class="fa fa-angle-right"></i>Tooth Colored Filling</a>
+                                                </li>
+                                                <li><a href="./maxillo-facial-surgery.html"><i
+                                                            class="fa fa-angle-right"></i>Maxillo-Facial Surgery</a>
+                                                </li>
+                                                <li><a href="./tmj-disorder-treatment.html"><i
+                                                            class="fa fa-angle-right"></i>Tmj Disorder Treatment</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                            <ul>
+                                                <li><a href="./habit-correction.html"><i
+                                                            class="fa fa-angle-right"></i>Habit Correction</a></li>
+                                                <li><a href="./preventive-dental-care.html"><i
+                                                            class="fa fa-angle-right"></i>Preventive Dental Care</a>
+                                                </li>
+                                                <li><a href="./management-of-dental-traumatic-Injuries.html"><i
+                                                            class="fa fa-angle-right"></i>Management of Dental
+                                                        Traumatic Injuries</a></li>
+                                                <li><a href="./dental-implants.html"><i
+                                                            class="fa fa-angle-right"></i>Dental management</a></li>
+                                                <li><a href="./composite-fillings-and-veneers.html"><i
+                                                            class="fa fa-angle-right"></i>Composite fillings and
+                                                        veneers</a></li>
+                                                <li><a href="./smile-designing.html"><i
+                                                            class="fa fa-angle-right"></i>Smile Designing</a></li>
+                                                <li><a href="./orthopantomogram.html"><i
+                                                            class="fa fa-angle-right"></i>Orthopantomogram</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="appointment.html">Book An Appointment</a>
+                            <a class="nav-link active" href="./appointment.html">Book An Appointment</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="./contact.html">Contact</a>
                         </li>
                     </ul>
                     <form action="#error" method="GET" class="d-flex search-header">
@@ -162,19 +239,20 @@
                 <div class="row footer-top-29">
                     <div class="col-md-5 footer-list-29 pe-xl-5">
                         <h6 class="footer-title-29">Contact Info </h6>
-                        <p class="mb-2 pe-xl-5">Address : 1st Floor, beside Beeramguda Main Road, Mallikarjuna Nagar,
+                        <p class="mb-2 pe-xl-5">Address : 1st Floor, beside Beeramguda Kamman, Mallikarjuna Nagar,
                             Beeramguda, Ramachandrapuram, Hyderabad, Telangana 502032.
                         </p>
                         <p class="mb-2">Phone Number : <a href="tel:+918187835489">8187835489</a></p>
-                        <p class="mb-2">Email : <a href="mailto:info@example.com">vsmilezdentalclinic@gmail.com</a></p>
+                        <p class="mb-2">Email : <a href="mailto:vsmilez.dental@gmail.com">vsmilez.dental@gmail.com</a>
+                        </p>
                     </div>
                     <div class="col-md-2 col-4 footer-list-29 mt-md-0 mt-4">
                         <ul>
-                            <h6 class="footer-title-29">About</h6>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="about.html">Special Offers</a></li>
-                            <li><a href="about.html">Orthodontics</a></li>
+                            <h6 class="footer-title-29">Quick Links</h6>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-3 col-4 ps-lg-5 ps-md-4 footer-list-29 mt-md-0 mt-4">
