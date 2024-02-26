@@ -19595,7 +19595,7 @@ p.sub-para {
   color: var(--primary-color);
 }
 .about-section .about-single {
-  box-shadow:2px 2px 4px var(--bs-dark);
+
   border-radius: 20px;
   transition: 0.5s all ease-in-out;
 }
