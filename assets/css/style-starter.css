@@ -7,7 +7,7 @@
   --bs-pink: #d63384;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
+  --bs-yellow: #7ED958;
   --bs-green: #198754;
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
@@ -18,7 +18,7 @@
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
+  --bs-warning: #7ED958;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
@@ -3340,13 +3340,13 @@ fieldset:disabled .btn {
 
 .btn-warning {
   color: #000;
-  background-color: #ffc107;
-  border-color: #ffc107;
+  background-color: #7ED958;
+  border-color: #7ED958;
 }
 
 .btn-warning:hover {
   color: #000;
-  background-color: #ffca2c;
+  background-color: #7ED958;
   border-color: #ffc720;
 }
 
@@ -3679,14 +3679,14 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-warning {
-  color: #ffc107;
-  border-color: #ffc107;
+  color:#7ED958;
+  border-color: #7ED958;
 }
 
 .btn-outline-warning:hover {
   color: #000;
-  background-color: #ffc107;
-  border-color: #ffc107;
+  background-color:#7ED958;
+  border-color: #7ED958;
 }
 
 .btn-check:focus + .btn-outline-warning,
@@ -3700,8 +3700,8 @@ fieldset:disabled .btn {
 .btn-outline-warning.active,
 .btn-outline-warning.dropdown-toggle.show {
   color: #000;
-  background-color: #ffc107;
-  border-color: #ffc107;
+  background-color: #7ED958;
+  border-color:#7ED958;
 }
 
 .btn-check:checked + .btn-outline-warning:focus,
@@ -3714,7 +3714,7 @@ fieldset:disabled .btn {
 
 .btn-outline-warning:disabled,
 .btn-outline-warning.disabled {
-  color: #ffc107;
+  color:#7ED958;
   background-color: transparent;
 }
 
@@ -7006,7 +7006,7 @@ fieldset:disabled .btn {
 }
 
 .link-warning {
-  color: #ffc107;
+  color:#7ED958;
 }
 
 .link-warning:hover,
@@ -7420,7 +7420,7 @@ fieldset:disabled .btn {
 }
 
 .border-warning {
-  border-color: #ffc107 !important;
+  border-color: #7ED958 !important;
 }
 
 .border-danger {
@@ -8249,7 +8249,7 @@ fieldset:disabled .btn {
 }
 
 .text-warning {
-  color: #ffc107 !important;
+  color: #7ED958 !important;
 }
 
 .text-danger {
@@ -8305,7 +8305,7 @@ fieldset:disabled .btn {
 }
 
 .bg-warning {
-  background-color: #ffc107 !important;
+  background-color: #7ED958 !important;
 }
 
 .bg-danger {
