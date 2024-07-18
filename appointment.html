@@ -14,6 +14,17 @@
         rel="stylesheet">
     <!-- Template CSS Style link -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "X0ylyTdacb37_ebIo",
+  });
+})();
+</script>
 </head>
 
 <body>
@@ -192,27 +203,28 @@
             <h3 class="title-style text-center mb-5"><span>Book An </span>Appointment</h3>
 
             <div class="form-inner-cont mx-auto" style="max-width:800px">
-                <form id="bookingForm" method="post" class="signin-form">
+                <form action="https://formsubmit.co/springframework1209@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
                     <div class="row align-form-map">
                         <div class="col-sm-12 form-input">
-                            <input type="text" name="w3lName" id="name" placeholder="Name" required="" />
+                            <input type="text" name="Name" id="name" placeholder="Name" required="" />
                         </div>
                         <div class="col-sm-12 form-input">
-                            <input type="email" name="w3lSender" id="email" placeholder="Email" required="" />
+                            <input type="email" name="Email" id="email" placeholder="Email" required="" />
                         </div>
                         <div class="col-sm-12 form-input">
-                            <input type="number" name="number" placeholder="Phone Number" id="number"
+                            <input type="number" name="Phone Number" placeholder="Phone Number" id="number"
                                 class="contact-input" required="">
                         </div>
                         <div class="col-sm-12 form-input">
-                            <input type="date" name="w3lSender" id="date" placeholder="Date" required="" />
+                            <input type="date" name="Date" id="date" placeholder="Date" required="" />
                         </div>
                         <div class="col-sm-12 form-input">
-                            <input type="time" name="w3lSender" id="time" placeholder="Time" required="" />
+                            <input type="time" name="Time" id="time" placeholder="Time" required="" />
                         </div>
 
                         <div class="col-sm-12 form-input">
-                            <select class="select" id="service">
+                            <select class="select" id="service" name="Service">
                                 <option value="Dental Implants">Dental Implants</option>
                                 <option value="Prosthesis">Prosthesis</option>
                                 <option value="Dental Braces">Dental Braces</option>
@@ -225,7 +237,7 @@
 
                     </div>
                     <div class="form-input">
-                        <textarea placeholder="Message" name="w3lMessage" id="message" required=""></textarea>
+                        <textarea placeholder="Message" name="Message" id="message" required=""></textarea>
                     </div>
                     <div class="submit text-right">
                         <button type="submit" class="btn btn-style">Submit

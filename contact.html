@@ -14,6 +14,19 @@
         rel="stylesheet">
     <!-- Template CSS Style link -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
+    <!-- <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js'></script>  -->
+
+    <!-- <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "X0ylyTdacb37_ebIo",
+  });
+})();
+</script> -->
+
 </head>
 
 <body>
@@ -229,24 +242,26 @@
                     </p>
                 </div>
             </div>
-            <div class="form-inner-cont mx-auto" style="max-width:800px">
-                <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+            <div class="form-inner-cont mx-auto" style="max-width:800px" id="contact-form">
+                <form action="https://formsubmit.co/springframework1209@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+
                     <div class="row align-form-map">
                         <div class="col-sm-6 form-input">
-                            <input type="text" name="w3lName" id="w3lName" placeholder="Name" />
+                            <input type="text" name="Name" id="name" placeholder="Name" />
                         </div>
                         <div class="col-sm-6 form-input">
-                            <input type="email" name="w3lSender" id="w3lSender" placeholder="Email" required="" />
+                            <input type="email" name="Email" id="email" placeholder="Email" required="" />
                         </div>
                         <div class="col-sm-6 form-input">
-                            <input type="text" name="w3lSubect" placeholder="Subject" class="contact-input">
+                            <input type="text" name="Subject" id="subject" placeholder="Subject" class="contact-input">
                         </div>
                         <div class="col-sm-6 form-input">
-                            <input type="number" name="w3lPhone" placeholder="Phone Number" class="contact-input">
+                            <input type="number" name="Number" id="phoneNumber" placeholder="Phone Number" class="contact-input">
                         </div>
                     </div>
                     <div class="form-input">
-                        <textarea placeholder="Message" name="w3lMessage" id="w3lMessage" required=""></textarea>
+                        <textarea placeholder="Message" name="Message" id="message" required=""></textarea>
                     </div>
                     <div class="submit text-right">
                         <button type="submit" class="btn btn-style">Submit
@@ -465,6 +480,32 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- //bootstrap -->
     <!-- //Js scripts -->
+
+
+    <!-- <script>
+        
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the default form submission
+      
+          const templateParams = {
+            from_name: document.getElementById('name').value,
+            from_email: document.getElementById('email').value,
+            subject: document.getElementById('subject').value,
+            phone_number: document.getElementById('phoneNumber').value,
+            message: document.getElementById('message').value
+          };
+      
+          emailjs.send('service_e6f1hh6', 'template_s38x2r2', templateParams)
+            .then(function(response) {
+              console.log('SUCCESS!', response.status, response.text);
+              alert('Message sent successfully!');
+            }, function(error) {
+              console.log('FAILED...', error);
+              alert('Failed to send message.');
+            });
+        });
+      </script> -->
+      
 </body>
 
 </html>
