@@ -19414,7 +19414,7 @@ p.sub-title {
 
 /* banner */
 #demo-1 {
-  background: url(../images/hero-sec.jpg) no-repeat;
+  background: url(../images/hero-sec.png) no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -19622,7 +19622,7 @@ p.sub-para {
 
 /* stats section */
 .w3-bottom-stats {
-  background: url(../images/bg1.jpg) no-repeat;
+  background: url(../images/bg-1.png) no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -20577,7 +20577,7 @@ body > footer > div > div > div {
 
 /* inner banner */
 .inner-banner {
-  background: url(../images/banner4.jpg) no-repeat;
+  background: url(../images/banner4.png) no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
